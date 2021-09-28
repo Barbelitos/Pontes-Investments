@@ -1,0 +1,118 @@
+:root {
+  /* COLORS */
+  --very-dark-gray: #414141;
+  --dark-gray: #707070;
+  --gray: #a0a0a0;
+  --light-gray: #cfcfcf;
+  --very-light-gray: #ececec;
+  --super-light-gray: #f6f6f6;
+
+  /* FONTS */
+  --poppins: "Poppins", sans-serif;
+  --signika-neg: "Signika Negative", sans-serif;
+}
+
+body {
+  font-family: var(--poppins);
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("../images/nybackground_desktop.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  /* position: absolute; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* position: fixed; */
+  top: 0;
+}
+
+.nav-logo {
+  width: 180px;
+  z-index: 1;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  transform: translateX(-100%);
+  text-align: center;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--very-dark-gray);
+  transition: all 0.3s ease;
+}
+
+.nav-menu_show {
+  transform: translateX(0);
+}
+
+.nav-item {
+  margin-bottom: 3rem;
+}
+.nav-link {
+  color: var(--super-light-gray);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-family: var(--signika-neg);
+}
+
+.nav-link:hover {
+  color: var(--gray);
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  outline: none;
+  z-index: 1;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  gap: 12rem;
+  font-family: var(--signika-neg);
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--very-light-gray);
+  margin-top: 6rem;
+  text-align: center;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.social-bar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.social-pic {
+  width: 30px;
+  height: 30px;
+}
+
+.service-card {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
