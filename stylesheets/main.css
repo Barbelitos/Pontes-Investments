@@ -16,12 +16,27 @@ body {
   font-family: var(--poppins);
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+
+.main-container {
+  width: 85%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* HERO SECTION */
 .hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
     url("../images/nybackground_desktop.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
+  max-height: 750px;
   width: 100vw;
   /* position: absolute; */
 }
@@ -41,13 +56,14 @@ body {
 }
 
 .nav-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
   position: absolute;
   transform: translateX(-100%);
   text-align: center;
   top: 0;
+  padding-top: 10rem;
   height: 100vh;
   width: 100vw;
   background-color: var(--very-dark-gray);
@@ -87,8 +103,6 @@ body {
 .hero-titles {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
-  gap: 12rem;
   font-family: var(--signika-neg);
   font-size: 2rem;
   text-transform: uppercase;
@@ -98,11 +112,15 @@ body {
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
 
+.main-title {
+  margin-bottom: 10rem;
+}
+
 .social-bar {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin: 0 auto;
+  margin: 12rem auto;
   z-index: 1;
 }
 
@@ -111,8 +129,309 @@ body {
   height: 30px;
 }
 
+/* SERVICES SECTION */
 .service-card {
-  margin: 0 auto;
+  font-family: var(--poppins);
+  margin: 1.5rem auto;
+  padding: 1rem;
   width: 90%;
   text-align: center;
+  line-height: 1.3rem;
+}
+
+.service-icon {
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  background: var(--very-dark-gray);
+  color: var(--very-light-gray);
+  font-family: var(--poppins);
+  padding-top: 0.5rem;
+}
+
+.about-picture {
+  max-width: 100%;
+  border-radius: 50%;
+  width: 50%;
+  display: block;
+  margin: 2rem auto;
+}
+
+.about-text {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* WHAT SECTION */
+.what-section {
+  padding: 2rem 0;
+  font-family: var(--poppins);
+  background: radial-gradient(
+    34.04% 108.97% at 52.54% 53.73%,
+    rgba(246, 246, 246, 0.73) 1.32%,
+    #cfcfcf 100%
+  );
+}
+
+.what-title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.what-text {
+  line-height: 1.5rem;
+}
+
+/* WHY SECTION */
+.why-section {
+  padding: 2rem 0;
+  font-family: var(--poppins);
+  background: var(--very-dark-gray);
+  color: var(--super-light-gray);
+}
+
+.why-title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.why-text {
+  line-height: 1.3rem;
+}
+
+.why-section h3 {
+  font-size: 1.4rem;
+  margin: 1.4rem 0;
+  background: linear-gradient(rgba(254, 251, 200, 1), rgba(146, 91, 34, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefits-table {
+  background: linear-gradient(
+    110.07deg,
+    #cfcfcf 2.89%,
+    #ffffff 30.21%,
+    #ffffff 73.96%,
+    #c4c4c4 94.61%
+  );
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.benefits-table th {
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+}
+
+.benefits-table td {
+  padding: 0.4rem 1.5rem;
+}
+
+.first-col {
+  text-align: left;
+}
+
+.second-col {
+  text-align: center;
+}
+
+.third-col {
+  text-align: right;
+}
+
+/* HOW SECTION */
+.how-section {
+  padding: 1.5rem 0;
+  font-family: var(--poppins);
+}
+
+.how-picture {
+  display: block;
+  width: 90%;
+  margin: 2.5rem auto;
+}
+
+.how-text {
+  line-height: 1.3rem;
+}
+
+.how-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background: var(--very-dark-gray);
+  color: var(--super-light-gray);
+  font-family: var(--poppins);
+  padding: 1.5rem 0;
+}
+
+.contact-title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.contacts {
+  margin: 0 auto;
+  line-height: 1.2rem;
+}
+
+.contact {
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  color: var(--super-light-gray);
+}
+
+/* FOOTER SECTION */
+.footer {
+  background: var(--very-dark-gray);
+  color: var(--super-light-gray);
+  font-family: var(--poppins);
+  text-align: center;
+  padding: 1.2rem 0;
+  line-height: 1.1rem;
+}
+
+/********** MEDIA QUERIES **********/
+@media only screen and (min-width: 900px) {
+  /* HERO SECTION */
+  .navbar {
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transform: translateX(0);
+    position: static;
+    height: fit-content;
+    padding: 0;
+    width: 80%;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .hero-titles {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15rem;
+    font-size: 3rem;
+  }
+
+  .social-bar {
+    position: absolute;
+  }
+
+  /* SERVICES SECTION */
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -100px;
+    margin: -150px auto 2rem auto;
+    padding: 0;
+  }
+
+  .service-card {
+    background: var(--very-light-gray);
+    width: 15rem;
+    border-radius: 15px;
+    /* font-size: 1.3rem; */
+    padding: 2.2rem 2rem 3rem 2rem;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  /* ABOUT SECTION */
+  .about-section {
+    display: flex;
+    align-content: center;
+    padding: 0;
+    max-height: 40rem;
+  }
+
+  .about-picture {
+    border-radius: 0;
+    margin: 0;
+    width: 30%;
+    min-width: 400px;
+    /* height: 100%; */
+  }
+
+  .about-text {
+    max-width: 700px;
+    padding: 2rem;
+  }
+
+  /* WHAT SECTION */
+  .what-section {
+    background: white;
+  }
+
+  .what-section .main-container {
+    background: radial-gradient(
+      34.04% 108.97% at 52.54% 53.73%,
+      rgba(246, 246, 246, 0.73) 1.32%,
+      #cfcfcf 100%
+    );
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 15px;
+  }
+
+  /* WHY SECTION */
+  .why-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    column-gap: 10%;
+  }
+
+  /* HOW SECTION */
+  .how-section .main-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* .how-text {
+    padding: 5rem;
+  } */
 }
