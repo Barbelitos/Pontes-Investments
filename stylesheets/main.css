@@ -43,6 +43,7 @@ h4 {
   /* max-height: 750px; */
   width: 100vw;
   /* position: absolute; */
+  /* overflow-x: hidden; */
 }
 
 .navbar {
@@ -123,13 +124,13 @@ h4 {
 
 .main-title {
   margin-bottom: 10rem;
-  transform: translateX(-150%);
-  transition: transform 1s;
+  transform: translateX(-250%);
+  transition: transform 0.6s;
 }
 
 .side-title {
-  transform: translateX(150%);
-  transition: transform 2s;
+  transform: translateX(250%);
+  transition: transform 0.8s;
   z-index: 0;
 }
 
@@ -150,7 +151,7 @@ h4 {
 .cards-container {
   transform: translateY(100%);
   visibility: hidden;
-  transition: transform 1.2s;
+  transition: transform 0.8s;
 }
 
 .service-card {

@@ -19,11 +19,11 @@ toggleMenu.addEventListener("click", () => {
 window.addEventListener("load", () => {
   setTimeout(() => {
     sideTitle.style.transform = "translateX(0%)";
-  }, 2000);
+  }, 800);
 
   setTimeout(() => {
     mainTitle.style.transform = "translateX(0)";
-  }, 500);
+  }, 800);
 });
 
 window.addEventListener("scroll", () => {
