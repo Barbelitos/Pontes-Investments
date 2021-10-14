@@ -383,6 +383,17 @@ section h1 {
   margin: 0 auto;
 }
 
+.wealth-text,
+.advisor-text {
+  transform: translateX(-200%);
+  transition: transform 1s;
+}
+
+.investments-text {
+  transform: translateX(200%);
+  transition: transform 1s;
+}
+
 .investments-section {
   background: var(--very-dark-gray);
   color: var(--super-light-gray);
