@@ -51,12 +51,19 @@ h4 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  /* position: fixed; */
+  position: absolute;
   top: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar-pages {
   background: var(--very-dark-gray);
+}
+
+.navbar.sticky {
+  position: fixed;
+  background-color: var(--very-dark-gray);
+  z-index: 10000;
 }
 
 .nav-logo {
@@ -117,7 +124,7 @@ h4 {
   font-size: 2rem;
   text-transform: uppercase;
   color: var(--very-light-gray);
-  margin-top: 6rem;
+  padding-top: 6rem;
   text-align: center;
   text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
 }
@@ -132,6 +139,11 @@ h4 {
   transform: translateX(250%);
   transition: transform 0.8s;
   z-index: 0;
+}
+
+.side-title.appear,
+.main-title.appear {
+  transform: translateX(0);
 }
 
 .social-bar {
@@ -152,6 +164,11 @@ h4 {
   transform: translateY(100%);
   visibility: hidden;
   transition: transform 0.8s;
+}
+
+.show-cards {
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .service-card {
@@ -357,6 +374,10 @@ h4 {
   padding: 1.5rem 0;
 }
 
+.wealth-section {
+  padding-top: 6rem;
+}
+
 .wealth-text,
 .investments-text,
 .advisor-text,
@@ -383,17 +404,6 @@ section h1 {
   margin: 0 auto;
 }
 
-.wealth-text,
-.advisor-text {
-  transform: translateX(-200%);
-  transition: transform 1s;
-}
-
-.investments-text {
-  transform: translateX(200%);
-  transition: transform 1s;
-}
-
 .investments-section {
   background: var(--very-dark-gray);
   color: var(--super-light-gray);
@@ -414,6 +424,10 @@ section h1 {
 .ethics-title {
   font-size: 1.5rem;
   margin: 1rem 0 2rem 0;
+}
+
+.show-text {
+  transform: translateX(0);
 }
 
 /********** MEDIA QUERIES **********/
@@ -454,8 +468,8 @@ section h1 {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    padding-top: 2rem;
-    margin-top: 13rem;
+    /* padding-top: 2rem; */
+    padding-top: 15rem;
     font-size: 3rem;
   }
 

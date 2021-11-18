@@ -1,3 +1,4 @@
+"use strict";
 // SELECTORS
 const toggleMenu = document.querySelector(".menu-toggle");
 const openMenu = document.querySelector(".menu-open");
@@ -9,8 +10,19 @@ const cardsContainer = document.querySelector(".cards-container");
 const wealthText = document.querySelector(".wealth-text");
 const investmentsText = document.querySelector(".investments-text");
 const advisorText = document.querySelector(".advisor-text");
+const navBar = document.querySelector(".navbar");
+
+// FUNCTIONS
 
 //EVENT LISTENERS
+
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    sideTitle.classList.add("appear");
+    mainTitle.classList.add("appear");
+  }, 700);
+});
+
 toggleMenu.addEventListener("click", () => {
   navMenu.classList.toggle("nav-menu_show");
   setTimeout(() => {
@@ -19,21 +31,16 @@ toggleMenu.addEventListener("click", () => {
   }, 150);
 });
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    sideTitle.style.transform = "translateX(0%)";
-  }, 800);
-
-  setTimeout(() => {
-    mainTitle.style.transform = "translateX(0)";
-  }, 800);
-
-  wealthText.style.transform = "translateX(0)";
-  investmentsText.style.transform = "translateX(0)";
-  advisorText.style.transform = "translateX(0)";
+window.addEventListener("scroll", () => {
+  cardsContainer.classList.add("show-cards");
 });
 
+// Sticky Nav
+let scrollPos = 0;
 window.addEventListener("scroll", () => {
-  cardsContainer.style.visibility = "visible";
-  cardsContainer.style.transform = "translateY(0%)";
+  if (window.scrollY > 0) navBar.classList.add("sticky");
+
+  if (document.body.getBoundingClientRect().top > scrollPos)
+    navBar.classList.remove("sticky");
+  scrollPos = document.body.getBoundingClientRect().top;
 });
