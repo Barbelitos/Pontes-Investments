@@ -229,6 +229,12 @@ h4 {
   font-weight: 500;
 }
 
+.bullets {
+  list-style: initial;
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* WHAT SECTION */
 .what-section {
   padding: 2rem 0;
@@ -558,7 +564,7 @@ section h1 {
     display: flex;
     align-content: center;
     padding: 0;
-    max-height: 40rem;
+    max-height: 60rem;
   }
 
   .about-picture {
@@ -570,7 +576,7 @@ section h1 {
   }
 
   .about-text {
-    max-width: 700px;
+    max-width: 780px;
     padding: 2rem;
   }
 
