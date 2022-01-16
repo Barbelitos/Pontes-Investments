@@ -328,7 +328,7 @@
       </div>
     </section>
     <section class="contact-section" id="contact">
-      <div class="main-container">
+      <div class="main-container contact-container">
         <div class="contacts">
           <h2 class="contact-title">Contact</h2>
           <div class="contact address">
@@ -346,7 +346,19 @@
             <a href="tel:+358504942070">+358417531692</a>
           </div>
         </div>
-        <form class="contact-form"></form>
+        <form class="contact-form" action="https://app.99inbound.com/api/e/p6porsAT" method="POST" target="_blank">
+          <label for="Name">Name:</label><br>
+          <input type="text" id="Name" name="Name" required><br><br>
+          <label for="Email">Email:</label><br>
+          <input type="email" id="Email" name="Email" required><br><br>
+          <label for="Message">Message:</label><br>
+          <textarea name="Message" id="Message" cols="65" rows="5" required></textarea><br><br>
+          <button class="form-btn submit-btn" type="submit">Submit</button>
+          <button class="form-btn clear-btn" type="reset">Clear Form</button>
+          <div style="position: absolute; left: -5000px;">
+            <input type="checkbox" name="american_white_matte_energy" value="1" tabindex="-1" autocomplete="no">
+          </div>
+        </form>
       </div>
     </section>
     <footer class="footer">
