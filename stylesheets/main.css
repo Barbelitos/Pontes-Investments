@@ -663,10 +663,12 @@ section h1 {
   .contact-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 
   .contacts {
     margin: 0;
+    padding-right: 4rem;
   }
 
   .contact-form {

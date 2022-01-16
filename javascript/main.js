@@ -11,6 +11,10 @@ const wealthText = document.querySelector(".wealth-text");
 const investmentsText = document.querySelector(".investments-text");
 const advisorText = document.querySelector(".advisor-text");
 const navBar = document.querySelector(".navbar");
+const contactForm = document.querySelector(".contact-form");
+const nameInput = document.querySelector(".name-input");
+const emailInput = document.querySelector(".email-input");
+const messageInput = document.querySelector(".message-input");
 
 // FUNCTIONS
 
@@ -43,4 +47,9 @@ window.addEventListener("scroll", () => {
   if (document.body.getBoundingClientRect().top > scrollPos)
     navBar.classList.remove("sticky");
   scrollPos = document.body.getBoundingClientRect().top;
+});
+
+// Clear contact form on submission
+contactForm.addEventListener("submit", (e) => {
+  nameInput.value = emailInput.value = messageInput.value = "";
 });
