@@ -414,6 +414,7 @@ h4 {
 .clear-btn {
   background: var(--light-gray);
   color: black;
+  height: 30px;
 }
 
 /* FOOTER SECTION */
