@@ -52,7 +52,9 @@ window.addEventListener("scroll", () => {
 
 // Clear contact form on submission
 contactForm.addEventListener("submit", (e) => {
-  nameInput.value = emailInput.value = messageInput.value = "";
+  setTimeout(() => {
+    nameInput.value = emailInput.value = messageInput.value = "";
+  }, 500);
 });
 
 // Remove menu on link click
