@@ -15,6 +15,7 @@ const contactForm = document.querySelector(".contact-form");
 const nameInput = document.querySelector(".name-input");
 const emailInput = document.querySelector(".email-input");
 const messageInput = document.querySelector(".message-input");
+const navLink = document.querySelectorAll(".nav-link");
 
 // FUNCTIONS
 
@@ -52,4 +53,13 @@ window.addEventListener("scroll", () => {
 // Clear contact form on submission
 contactForm.addEventListener("submit", (e) => {
   nameInput.value = emailInput.value = messageInput.value = "";
+});
+
+// Remove menu on link click
+navLink.forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("nav-menu_show");
+    openMenu.classList.toggle("hidden-icon");
+    closeMenu.classList.add("hidden-icon");
+  });
 });
