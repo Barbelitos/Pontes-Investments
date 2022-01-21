@@ -707,6 +707,7 @@ section h1 {
   }
 }
 
+/*** WIDE SCREEN ***/
 @media only screen and (min-width: 1600px) {
   .about-section {
     max-height: 40rem;
