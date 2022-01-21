@@ -50,7 +50,6 @@ h4 {
   width: 100%;
   position: absolute;
   top: 0;
-  /* transition: all 0.4s ease-in-out; */
 }
 
 .navbar-pages {
@@ -605,20 +604,20 @@ section h1 {
     display: flex;
     align-content: center;
     padding: 0;
-    max-height: 50rem;
+    max-height: 45rem;
   }
 
   .about-picture {
     border-radius: 0;
     margin: 0;
-    width: 45%;
-    min-width: 500px;
+    max-width: 45%;
   }
 
   .about-text {
-    /* max-width: 780px; */
     padding: 3rem;
     font-size: 0.9rem;
+    width: 100%;
+    line-height: 1.3rem;
   }
 
   /* WHAT SECTION */
@@ -705,5 +704,21 @@ section h1 {
     );
     padding: 2rem;
     border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .about-section {
+    max-height: 40rem;
+  }
+
+  .about-picture {
+    max-width: 30%;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 5rem;
   }
 }
